@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*---- Reset Style ----*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+li {
+    list-style: none; 
+}
+
+/*--- General Style ----*/
+body {
+    background-color: #0a0a0a;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1580px;
+    margin: 0 auto;
+}
+.btn {
+    background: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+}    
+
+/*--- Navigation Style ----*/
+nav {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: #0a0a0a;
+}
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+nav > ul {
+    display: flex;
+    flex-grow: 1;
+    gap: 1em;
+}
+nav li:nth-child(4) {
+    margin-left: auto;
+}
+a {
+    display: inline-block;
+    padding: 6px 10px;
+}
+li:last-child, a:hover {
+    background: #fff;
+    border-radius: 10px;
+    color: #000;
+}
+li:last-child a {
+    color: #000;
+}
+
+/*--- Hero Section ----*/
+.hero_section {
+    height: calc(100vh - 59px); /*Not responsive for all viewport*/
+    background-image: url("../images/hero1_bg.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_text {
+    width: 35rem;
+    padding: 10px 30px;
+}
+
+.hero_text h1 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.2;
+
+}
+.hero_text p {
+    margin: 12px 0 14px 0;
+}
+.hero_text .btn {
+    font-size: inherit;
+}
