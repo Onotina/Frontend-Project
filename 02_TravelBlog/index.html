@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <title>Travel Blog</title>
@@ -8,18 +8,19 @@
         <!-- External Links -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=flight_takeoff,search&display=block" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
 
-        <link rel="stylesheet" href="style.css">
+        <!-- Internal Links -->
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
-       <!-- Main Navigation Section of the Website --> 
+        <!-- Main Navigation Section of the Website --> 
         <header class="container">
             <nav class="main_navigation">
-                <p class="logo">
+                <a class="logo" href="#">
                     <span class="material-symbols-outlined"> flight_takeoff </span>
                     <span class="logo_text">Travel Blog</span>
-                </p>
+                </a>
                 <ul>
                     <li><a href="#">Destinations</a></li>
                     <li><a href="#">About</a></li>
@@ -29,76 +30,72 @@
             </nav>
         </header>
 
-        <!-- The Main Section of the Page-->
-        <section class="container">
-            <header>
-                <h1 class="main_title heading">Discover Your Next Adventure</h1>
-                <div class="search">
-                        <input class="search-input" type="search" placeholder="Search">
-                        <span class="search-incon material-symbols-outlined">search</span>
-                </div>
-            </header>
-            
-            <!-- Wraps The Blog & Blog Navigation In One -->
-            <div class="blog_nav_container">
-                <!-- Stores All The Blog Post in One Container -->
-                <article class="featured_blog_section">
-                    <article class="featured_blog">
-                        <img src="images/nature_4.jpg" alt="a Sand Dune">
-                        <h3 class="heading">Adventure in the Desert</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas facere voluptates magnam </p>
-                    </article>
-                    <article class="featured_blog">
-                        <img src="images/nature_4.jpg" alt="a mountain">
-                        <h3 class="heading">Exploring The Mountains</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas facere voluptates magnam </p>
-                    </article>
-                    <article class="featured_blog">
-                        <img src="images/nature_3.jpg" alt="a Beach">
-                        <h3 class="heading">Tropical Beaches</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas facere voluptates magnam </p>
-                    </article>
-                    <article class="featured_blog">
-                        <img src="images/city.jpg" alt="a Forest">
-                        <h3 class="heading">Discovering Cityscapes</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas facere voluptates magnam </p>
-                    </article>
-                </article>
-
-                <!-- Stores All The Blogs Navigation -->
-                <nav class="secondary_navigation">
-                    <h2 class="second_heading heading">Categories</h2>
-                    <ul>
-                        <li><a href="#">Nature</a></li>
-                        <li><a href="#">Beaches</a></li>
-                        <li><a href="#">Cities</a></li>
-                        <li><a href="#">Adventure</a></li>
-                        <li><a href="#">Culture</a></li>
-                    </ul>
-                </nav>
+        <!-- Hero Section -->
+        <section class="hero_section">
+            <div class="hero_text">
+                <h1 class="heading">Explore the World</h1>
+                <a href="blog.html" class="btn">Explore Destinations</a>
             </div>
         </section>
 
-        <!-- The Last Section of the Page -->
+        <!-- Featured Destinations -->
+        <section class="featured_section container">
+            <h2 class="heading">Featured Destinations</h2>
+            <div class="featured_card_container">
+                <section class="featured_card">
+                    <img src="images/beach.jpg" alt="Beaches">
+                    <h3 class="heading">Tropical Beaches</h3>
+                    <p>Tropical beaches here when lorem ipseum...</p>
+                </section>
+                <section class="featured_card">
+                    <img src="images/nature_2.jpg" alt="Mountain and Lake">
+                    <h3 class="heading">Mountain Adventure</h3>
+                    <p>Mountain Adventure here when lorem ipseum...</p>
+                </section>
+                <section class="featured_card">
+                    <img src="images/nature_1.jpg" alt="Desert Sand Dunes">
+                    <h3 class="heading">Desert Escapes</h3>
+                    <p>Desert escapes here when lorem ipseum...</p>
+                </section>
+                <section class="featured_card">
+                    <img src="images/nature_4.jpg" alt="Forest Exploration">
+                    <h3 class="heading">Forest Explore</h3>
+                    <p>Forest Explore here when lorem ipseum...</p>
+                </section>
+            </div>
+        </section> 
+
+        <!-- Start Exploring -->
+        <section class="explore_section container">
+            <div class="explore_text">
+                <h2 class="heading">Start Exploring</h2>
+                <p>
+                    Subscribe to our newsletter to get the latest travel stories, tips, and inspiration.
+                </p>
+            </div>
+            <button class="btn">Subscribe</button>
+        </section>
+
+        <!-- The Footer -->
         <footer class="container">
             <section class="newsletter">
-                <h2 class="second_heading heading">Newsletter</h2>
-                <p>Subscribe to our newsletter to get the latest updates</p>
-                <p class="subscribe">
-                    <input type="email" placeholder="Email Address">
-                <button class="btn">Subscribe</button>
+                <h3 class="heading">Newsletter</h3>
+                <p>
+                    <input type="email" placeholder="Email address">
+                    <button class="btn">Subscribe</button>
                 </p>
             </section>
             <section class="quick_links">
-                <h2 class="second_heading heading">Quick links</h2>
+                <h3 class="heading">Quick Links</h3>
                 <ul>
                     <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </section>
             <section class="social_links">
-                <h2 class="heading">Social Links</h2>
+                <h3 class="heading">Social Links</h3>
                 <div class="social_icons">
                     <a href="https://web.facebook.com/profile.php?id=61551698141701">
                         <i class="fa-brands fa-facebook-f"></i>

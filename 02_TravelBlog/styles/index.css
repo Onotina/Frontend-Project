@@ -1,0 +1,88 @@
+/*-- General Styles ---*/
+body > section:not(:first-of-type) {
+    margin-top: 1.5rem;
+}
+body > section h2:first-of-type {
+    margin-bottom: 1rem;
+}
+
+/*-- Hero Section ---*/
+.hero_section {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../images/sunset.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text {
+    text-align: center;
+}
+.hero_text h1 {
+    color: var(--white-color);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+.hero_text .btn {
+    background-color: var(--secondary-color);
+    opacity: 85%;
+    margin-top: 2em;
+    padding: .8em 4em;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+}
+
+/*-- Featured Destination Section --*/
+.featured_section {
+    padding-bottom: 0;
+}
+.featured_card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+    grid-auto-rows: minmax(15em, 20em);
+    column-gap: 2em;
+    row-gap: 1rem;
+}
+@media screen and (max-width: 882px) { 
+    /* for browsers at 882px and lower */
+    .featured_card_container {
+        grid-template-columns: repeat(auto-fill, minmax(11.5em, 1fr));
+    }
+    .featured_card h3 {
+        font-size: 1rem;
+    }
+}
+
+.featured_card img {
+    width: 100%;
+    height: 65%;
+    border-radius: 15px;
+}
+.featured_card h3 {
+    margin: 5px 0;
+}
+
+/*-- Start Exploring Section --*/
+.explore_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+.explore_section.container {
+    margin-top: 0;
+}
+
+.explore_section .heading {
+    margin-bottom: .2em;
+}
+.explore_section .btn {
+    flex-basis: 15rem;
+    height: 2rem;
+    padding: 10px 16px;
+}
