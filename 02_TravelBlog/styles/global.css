@@ -22,8 +22,11 @@ button {
     --heading-font: "Libre Baskerville", serif;
 
     --main-heading-size: 3.5em;
-    --global-font-size: 18px;
     --heading-line-height: 1.2;
+    --mobile-heading-size: 2.5em;
+    --mobile-heading-line-height: 2;
+    --global-font-size: 18px;
+
     --padding-size: 6px 16px;
 
     --main-text-color: #292929;
@@ -56,6 +59,11 @@ body {
 h1.heading { 
     line-height: var(--heading-line-height);
     font-size: var(--main-heading-size);
+}
+@media screen and (max-width: 575px) {
+    h1 {
+        line-height: var(--mobile-heading-line-height);
+    }
 }
 h3.heading {
     color: var(--secondary-heading-color);
