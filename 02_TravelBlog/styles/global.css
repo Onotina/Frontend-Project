@@ -55,7 +55,7 @@ body {
 @media screen and (max-width: 750px) {
     header.container {
         padding-left: 2em;
-        padding-right: 2em;
+        padding-right: 2.1em;
     }
 }
 .heading {
