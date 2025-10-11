@@ -52,6 +52,12 @@ body {
     margin: 0 auto;
     padding: 1em 3em;
 }
+@media screen and (max-width: 750px) {
+    header.container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
 .heading {
     font-family: var(--heading-font);
     color: var( --main-heading-color);
@@ -90,6 +96,9 @@ input {
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width: 667px) {
+    .main_navigation 
+}
 
 /* Logo */
 .logo {
@@ -117,6 +126,7 @@ input {
 footer {
     display: flex; 
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 2em;
     background-color: var(--footer_bg_color);
 }
