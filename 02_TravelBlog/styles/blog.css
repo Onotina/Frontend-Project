@@ -120,4 +120,7 @@
 .newsletter .btn {
     background-color: var(--secondary-color);
 }
+.newsletter .input_container {
+    margin-top: 10px;
+}
 
