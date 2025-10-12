@@ -16,7 +16,7 @@ button {
     border: none;
 }
 
-/*---- General Style ----*/
+/*-------------------- General Style ----------------------*/
 :root {
     --body-font: "Nunito Sans", sans-serif;
     --heading-font: "Libre Baskerville", serif;
@@ -24,7 +24,7 @@ button {
     --main-heading-size: 3.5em;
     --heading-line-height: 1.2;
     --mobile-heading-size: 2.5em;
-    --mobile-heading-line-height: 2;
+    --mobile-heading-line-height: 1.3;
     --global-font-size: 18px;
 
     --padding-size: 6px 16px;
@@ -47,6 +47,8 @@ body {
     line-height: 1.5;
     color: var(--main-text-color);
 }
+
+/* Container Element Styles */
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -54,26 +56,31 @@ body {
 }
 @media screen and (max-width: 750px) {
     header.container {
-        padding-left: 2em;
-        padding-right: 2.1em;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
     }
 }
 .heading {
     font-family: var(--heading-font);
     color: var( --main-heading-color);
 }
+
+/* Heading Styles */
 h1.heading { 
     line-height: var(--heading-line-height);
     font-size: var(--main-heading-size);
 }
-@media screen and (max-width: 575px) {
-    h1 {
+@media screen and (max-width: 663px) {
+    h1.heading {
+        font-size: calc(var(--mobile-heading-size) + .8em);
         line-height: var(--mobile-heading-line-height);
     }
 }
 h3.heading {
     color: var(--secondary-heading-color);
 }
+
+/* Interactive Styles */
 a {
     display: inline-block;
     color: #000;   
@@ -90,14 +97,18 @@ input {
 }
 
 
-/*---- Navigation Style ----*/
+/*-------------------- Navigation Style -------------------- */
 .main_navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (max-width: 667px) {
-    .main_navigation 
+@media screen and (max-width: 620px) {
+    .main_navigation {
+        flex-direction: column;
+        align-items: stretch;
+        gap: .5em;
+    }
 }
 
 /* Logo */
@@ -106,11 +117,26 @@ input {
     align-items: center;
     gap: .7em;
 }
+@media screen and (max-width: 620px) {
+    .logo {
+        justify-content: center;
+    }
+}
 
 /* Links */
 .main_navigation ul {
     display: flex;
     gap: 1em;
+}
+@media screen and (max-width: 640px) {
+    .main_navigation ul {
+        gap: .4em;
+    }
+}
+@media screen and (max-width: 620px) {
+    .main_navigation ul {
+        justify-content: center;
+    }
 }
 .main_navigation ul a, 
 .main_navigation ul span {
@@ -122,7 +148,7 @@ input {
     border-radius: 15px;
 }
 
-/*---- Footer Style ----*/
+/*-------------------- Footer Style -------------------- */
 footer {
     display: flex; 
     justify-content: space-around;
