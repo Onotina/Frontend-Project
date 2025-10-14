@@ -27,7 +27,7 @@ button {
     --mobile-heading-line-height: 1.3;
     --global-font-size: 18px;
 
-    --padding-size: 6px 16px;
+    --padding-size: 9px 16px;
 
     --main-text-color: #292929;
     --main-heading-color: #242424;
@@ -92,6 +92,7 @@ input {
     padding: var(--padding-size);
     font-size: 14px;
     background: var(--primary-color);
+    border-radius: 5px;
     color: var(--white-color);
     cursor: pointer;
 }
